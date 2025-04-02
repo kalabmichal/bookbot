@@ -15,9 +15,9 @@ def characters(text):
     return dict
 
 def sortedList(list):
-    hlavicka = "============ BOOKBOT ============\nAnalyzing book found at books/frankenstein.txt...\n----------- Word Count ----------\nFound 75767 total words\n--------- Character Count -------\n"
-    sorted = list.sort()
-    for i in sorted:
-        if i.isalpha() == False:
-            i.remove()
-    return sorted
+    #hlavicka = "============ BOOKBOT ============\nAnalyzing book found at books/frankenstein.txt...\n----------- Word Count ----------\nFound 75767 total words\n--------- Character Count -------\n"
+    sortedL = list.sort()
+    #for i in sorted:
+        #if i.isalpha() == False:
+            #i.remove()
+    return sortedL
