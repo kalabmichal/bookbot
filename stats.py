@@ -14,10 +14,16 @@ def characters(text):
 
     return dict
 
-def sortedList(list):
-    #hlavicka = "============ BOOKBOT ============\nAnalyzing book found at books/frankenstein.txt...\n----------- Word Count ----------\nFound 75767 total words\n--------- Character Count -------\n"
-    sortedL = list.sort()
-    #for i in sorted:
-        #if i.isalpha() == False:
-            #i.remove()
+
+def sortedList(dict_of_chars):
+    sortedL = []
+    for char, count in dict_of_chars.items():
+        sortedL.append({"char": char, "count": count})
+    
+    def sort_key(item):
+        return item["count"]
+    
+    sortedL.sort(reverse=True, key=sort_key)
+    
     return sortedL
+
